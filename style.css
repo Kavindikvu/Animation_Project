@@ -1,0 +1,142 @@
+/* General styles */
+body {
+    margin: 0;
+    background-color: #87ceeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .cartoon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+  }
+  
+  .cartoon {
+    position: relative;
+    width: 120px;
+    height: 200px;
+    text-align: center;
+  }
+  
+  /* Speech bubble */
+  .speech-bubble {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    border: 2px solid black;
+    width: 140px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .speech-bubble.show {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Head */
+  .head {
+    width: 80px;
+    height: 80px;
+    background-color: #ffcc99;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Eyes */
+  .eye {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+  }
+  
+  .eye.left {
+    left: 20px;
+  }
+  
+  .eye.right {
+    right: 20px;
+  }
+  
+  /* Mouth */
+  .mouth {
+    width: 20px;
+    height: 10px;
+    background-color: black;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Body */
+  .body {
+    width: 60px;
+    height: 90px;
+    background-color: #ff6347;
+    border-radius: 10px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Arms */
+  .arm {
+    width: 15px;
+    height: 60px;
+    background-color: #ffcc99;
+    position: absolute;
+    top: 90px;
+    border-radius: 10px;
+  }
+  
+  .arm.left {
+    left: -20px;
+  }
+  
+  .arm.right {
+    right: -20px;
+  }
+  
+  /* Legs */
+  .leg {
+    width: 20px;
+    height: 70px;
+    background-color: #ffcc99;
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px;
+  }
+  
+  .leg.left {
+    left: 15px;
+  }
+  
+  .leg.right {
+    right: 15px;
+  }
+  
